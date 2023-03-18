@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "greeting-service.greeting",
+      "type": "java.lang.String",
+      "description": "Description for greeting-service.greeting."
+    },
+    {
+      "name": "spring.config.import.optional",
+      "type": "java.lang.String",
+      "description": "Description for spring.config.import.optional."
+    }
+  ] }
