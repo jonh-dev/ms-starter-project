@@ -10,8 +10,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cambio_service?useTimezone=true&serverTimezone=UTC
-    username: Jonh
-    password: Mjs27042021
+    username: root123
+    password: root123
   jpa:
     hibernate:
       ddl-auto: update
@@ -21,8 +21,8 @@ spring:
         dialect: org.hibernate.dialect.MySQL57Dialect
   flyway:
     url: jdbc:mysql://localhost:3306/cambio_service?useTimezone=true&serverTimezone=UTC
-    user: Jonh
-    password: Mjs27042021
+    user: root123
+    password: root123
     locations: classpath:db/migration
   sleuth:
     sampler:
