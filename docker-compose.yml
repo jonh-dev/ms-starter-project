@@ -33,7 +33,7 @@ services:
       TZ: America/Sao_Paulo
       MYSQL_ROOT_PASSWORD: admin123
       MYSQL_USER: docker-cambio
-      MYSQL_PASSWORD: Mjs27042021
+      MYSQL_PASSWORD: root123
       MYSQL_DATABASE: cambio_service
       MYSQL_ROOT_HOST: '%'
       MYSQL_TCP_PORT: 3308
@@ -52,7 +52,7 @@ services:
       TZ: America/Sao_Paulo
       MYSQL_ROOT_PASSWORD: admin123
       MYSQL_USER: docker-book
-      MYSQL_PASSWORD: Mjs27042021
+      MYSQL_PASSWORD: root123
       MYSQL_DATABASE: book_service
       MYSQL_ROOT_HOST: '%'
       MYSQL_TCP_PORT: 3310
@@ -104,10 +104,10 @@ services:
       SPRING.APPLICATION.NAME: cambio-service
       SPRING.DATASOURCE.URL: jdbc:mysql://cambio-db:3308/cambio_service?useSSL=false&serverTimezone=UTC&enableTLSProtocols=TLSv1.2
       SPRING.DATASOURCE.USERNAME: docker-cambio
-      SPRING.DATASOURCE.PASSWORD: Mjs27042021
+      SPRING.DATASOURCE.PASSWORD: root123
       SPRING.FLYWAY.URL: jdbc:mysql://cambio-db:3308/cambio_service?useSSL=false&serverTimezone=UTC&enableTLSProtocols=TLSv1.2
       SPRING.FLYWAY.USER: docker-cambio
-      SPRING.FLYWAY.PASSWORD: Mjs27042021
+      SPRING.FLYWAY.PASSWORD: root123
     networks:
       - microservices-network
 
@@ -133,10 +133,10 @@ services:
       SPRING.APPLICATION.NAME: book-service
       SPRING.DATASOURCE.URL: jdbc:mysql://book-db:3310/book_service?useSSL=false&serverTimezone=UTC&enableTLSProtocols=TLSv1.2
       SPRING.DATASOURCE.USERNAME: docker-book
-      SPRING.DATASOURCE.PASSWORD: Mjs27042021
+      SPRING.DATASOURCE.PASSWORD: root123
       SPRING.FLYWAY.URL: jdbc:mysql://book-db:3310/book_service?useSSL=false&serverTimezone=UTC&enableTLSProtocols=TLSv1.2
       SPRING.FLYWAY.USER: docker-book
-      SPRING.FLYWAY.PASSWORD: Mjs27042021
+      SPRING.FLYWAY.PASSWORD: root123
     networks:
       - microservices-network
 networks:
